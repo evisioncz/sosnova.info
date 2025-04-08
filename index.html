@@ -2,10 +2,21 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Sosnova.info</title>
+    <title>Moje Cloudinary galerie</title>
 </head>
 <body>
-    <h1>ahpj Vítejte na sosnova.info!</h1>
-    <p>Toto je moje statická stránka na GitHub Pages.</p>
+    <h1>Fotogalerie Sosnova</h1>
+    <div id="my-gallery"></div>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <script>
+      window.cloudinary_gallery = cloudinary.galleryWidget({
+        container: "#my-gallery",
+        cloudName: "tvoje-cloud-name", // Nahraď svým Cloud Name (najdeš v Dashboardu)
+        mediaAssets: [{tag: "kamenny_dum"}], // Použij tag, co jsi přidal
+        displayProps: {mode: "classic", columns: 3},
+        carouselStyle: "thumbnails"
+      });
+      cloudinary_gallery.render();
+    </script>
 </body>
 </html>
