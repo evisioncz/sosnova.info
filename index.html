@@ -6,28 +6,37 @@
 </head>
 <body>
     <h1>Fotogalerie Sosnova</h1>
-    <div id="my-gallery"></div>
-    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
-    <script>
-        // Počkáme, až se skript načte
-        window.onload = function() {
-            if (typeof cloudinary === 'undefined') {
-                console.error("Cloudinary knihovna není načtená!");
-                return;
-            }
-            try {
-                window.cloudinary_gallery = cloudinary.galleryWidget({
-                    container: "#my-gallery",
-                    cloudName: "drgw8apbq",
-                    mediaAssets: [{tag: "kamenny_dum"}],
-                    displayProps: {mode: "classic", columns: 3},
-                    carouselStyle: "thumbnails"
-                });
-                cloudinary_gallery.render();
-            } catch (error) {
-                console.error("Chyba při vytváření galerie:", error);
-            }
-        };
-    </script>
+    
+  
+<!-- 1. Načtení Cloudinary knihovny -->
+<script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+
+<!-- 2. Kontejner pro obrázky -->
+<div id="cloudinary-gallery" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+
+<!-- 3. JavaScript kód -->
+<script>
+  const cloudName = "drgw8apbq";
+  const tag = "kamenny_dum";
+
+  fetch(`https://res.cloudinary.com/${cloudName}/image/list/${tag}.json`)
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById("cloudinary-gallery");
+      data.resources.forEach(image => {
+        const img = document.createElement("img");
+        img.src = `https://res.cloudinary.com/${cloudName}/image/upload/w_300/${image.public_id}.jpg`;
+        img.alt = image.public_id;
+        img.style.maxWidth = "100%";
+        img.style.borderRadius = "8px";
+        container.appendChild(img);
+      });
+    })
+    .catch(err => {
+      console.error("Chyba při načítání obrázků:", err);
+    });
+</script>
+  
+  
 </body>
 </html>
