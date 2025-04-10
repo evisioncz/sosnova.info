@@ -5,16 +5,17 @@
     <title>Sosnová info</title>
 </head>
 <body>
-    <h1>Fotogalerie Sosnova</h1>
+    <h1>Fotogalerie Sosnová</h1>
     
   
-<!-- 1. Načtení Cloudinary knihovny -->
-<script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+<!-- 1. Lightbox2 CSS a JS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
 <!-- 2. Kontejner pro obrázky -->
 <div id="cloudinary-gallery" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
 
-<!-- 3. JavaScript kód -->
+<!-- 3. JavaScript pro načtení obrázků z Cloudinary -->
 <script>
   const cloudName = "drgw8apbq";
   const tag = "kamenny_dum";
@@ -24,19 +25,29 @@
     .then(data => {
       const container = document.getElementById("cloudinary-gallery");
       data.resources.forEach(image => {
+        const fullImgUrl = `https://res.cloudinary.com/${cloudName}/image/upload/${image.public_id}.jpg`;
+        const thumbImgUrl = `https://res.cloudinary.com/${cloudName}/image/upload/w_300/${image.public_id}.jpg`;
+
+        const link = document.createElement("a");
+        link.href = fullImgUrl;
+        link.setAttribute("data-lightbox", "gallery");
+        link.setAttribute("data-title", image.public_id);
+        link.style.display = "inline-block";
+
         const img = document.createElement("img");
-        img.src = `https://res.cloudinary.com/${cloudName}/image/upload/w_300/${image.public_id}.jpg`;
+        img.src = thumbImgUrl;
         img.alt = image.public_id;
         img.style.maxWidth = "100%";
         img.style.borderRadius = "8px";
-        container.appendChild(img);
+
+        link.appendChild(img);
+        container.appendChild(link);
       });
     })
     .catch(err => {
       console.error("Chyba při načítání obrázků:", err);
     });
 </script>
-  
   
 </body>
 </html>
