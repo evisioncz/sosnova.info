@@ -14,23 +14,37 @@
       background: #f8f8f8;
     }
 
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
     #cloudinary-gallery {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      justify-content: center;
     }
 
     #cloudinary-gallery a {
       flex: 1 1 calc(25% - 10px);
       max-width: calc(25% - 10px);
       box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
     }
 
     #cloudinary-gallery img {
       width: 100%;
-      height: auto;
+      height: 0;
+      padding-bottom: 100%; /* Čtvercový formát */
+      object-fit: cover;
       border-radius: 8px;
       display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
     @media (max-width: 900px) {
@@ -46,15 +60,33 @@
         max-width: calc(50% - 10px);
       }
     }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
   </style>
 </head>
 <body>
 
-<h1>Fotogalerie – Kamenný dům</h1>
+<h1>Sosnová – Kamenný dům</h1>
 <div id="cloudinary-gallery"></div>
 
 <!-- Lightbox2 JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+
+<!-- Lightbox2 volby -->
+<script>
+  lightbox.option({
+    'albumLabel': "Obrázek %1 z %2",
+    'fadeDuration': 300,
+    'resizeDuration': 300,
+    'wrapAround': true,
+    'alwaysShowNavOnTouchDevices': true
+  });
+</script>
 
 <script>
   const cloudName = "drgw8apbq";
@@ -66,7 +98,7 @@
       const container = document.getElementById("cloudinary-gallery");
       data.resources.forEach(image => {
         const fullImgUrl = `https://res.cloudinary.com/${cloudName}/image/upload/${image.public_id}.jpg`;
-        const thumbImgUrl = `https://res.cloudinary.com/${cloudName}/image/upload/w_600/${image.public_id}.jpg`;
+        const thumbImgUrl = `https://res.cloudinary.com/${cloudName}/image/upload/w_600,c_fill,g_auto/${image.public_id}.jpg`;
 
         const link = document.createElement("a");
         link.href = fullImgUrl;
@@ -85,6 +117,10 @@
       console.error("Chyba při načítání obrázků:", err);
     });
 </script>
+
+<footer>
+  <p>Fotografie použity se souhlasem autora. © 2025</p>
+</footer>
 
 </body>
 </html>
