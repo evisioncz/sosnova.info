@@ -19,6 +19,16 @@
         .playfair_display_15d0e3d1-module__4K2SrG__variable {
             font-family: Georgia, Times New Roman, serif;
         }
+        /* Mobile menu styles */
+        #mobile-menu.active {
+            display: flex;
+        }
+        @media (max-width: 767px) {
+            #mobile-menu {
+                width: 100%;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+        }
     </style>
 </head>
 <body class="font-sans antialiased">
@@ -44,7 +54,7 @@
                             </div>
                             <h3 class="text-xl font-medium mb-3 text-primary">Material World</h3>
                             <p class="text-gray-600 text-sm mb-5 line-clamp-3">Research shows that some time outdoors can improve your health and wellbeing. Connecting with natural materials helps reduce stress levels.</p>
-                            <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                            <div class="flex items-center justify-between mt-auto pt-4 borderinski-t border-gray-100">
                                 <div class="flex items-center gap-2">
                                     <div class="w-8 h-8 rounded-full overflow-hidden">
                                         <img alt="Benito Noboa" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="object-cover w-full h-full" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
@@ -63,7 +73,8 @@
                             <img alt="Animal Behaves" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
                         </div>
                         <div class="p-6">
-                            <div class="flex flex-wrap gap- Salis><span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Animals</span>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Animals</span>
                                 <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Wildlife</span>
                             </div>
                             <h3 class="text-xl font-medium mb-3 text-primary">Animal Behaves</h3>
@@ -309,6 +320,26 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
+                // Initialize menu toggle after header is loaded
+                const hamburger = document.getElementById('hamburger');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const closeMenu = document.getElementById('close-menu');
+                if (hamburger && mobileMenu && closeMenu) {
+                    hamburger.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('active');
+                    });
+                    closeMenu.addEventListener('click', () => {
+                        mobileMenu.classList.remove('active');
+                    });
+                    // Close menu when clicking a link
+                    mobileMenu.querySelectorAll('a').forEach(link => {
+                        link.addEventListener('click', () => {
+                            mobileMenu.classList.remove('active');
+                        });
+                    });
+                } else {
+                    console.error('Menu elements not found');
+                }
             })
             .catch(error => console.error('Error loading header:', error));
     </script>
