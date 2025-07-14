@@ -1,13 +1,13 @@
 <nav class="fixed top-0 left-0 right-0 z-50 py-4 bg-primary/95 backdrop-blur-sm shadow-md">
     <div class="container flex items-center justify-between">
         <a class="text-xl font-semibold text-white" href="/">NAT</a>
-        <div id="mobile-menu" class="hidden gap-10 md:flex flex-col md:flex-row absolute md:static top-16 left-0 right-0 bg-primary/95 md:bg-transparent p-4 md:p-0">
-            <a class="text-sm font-medium text-white/80 hover:text-white transition-colors" href="/">Home</a>
-            <a class="text-sm font-medium text-white/80 hover:text-white transition-colors" href="#stories">Stories</a>
-            <a class="text-sm font-medium text-white/80 hover:text-white transition-colors" href="#authors">Authors</a>
-            <a class="text-sm font-medium text-white/80 hover:text-white transition-colors" href="#categories">Categories</a>
-            <a class="text-sm font-medium text-white/80 hover:text-white transition-colors" href="#about">About</a>
-            <button id="close-menu" class="text-white text-sm font-medium md:hidden mt-4">Close</button>
+        <div id="mobile-menu" class="hidden md:flex flex-col md:flex-row absolute md:static top-16 left-0 right-0 bg-primary/95 md:bg-transparent p-4 md:p-0 gap-4 md:gap-10">
+            <a class="text-sm font-medium text-white/80 hover:text-white transition-colors py-2 md:py-0" href="/">Home</a>
+            <a class="text-sm font-medium text-white/80 hover:text-white transition-colors py-2 md:py-0" href="#stories">Stories</a>
+            <a class="text-sm font-medium text-white/80 hover:text-white transition-colors py-2 md:py-0" href="#authors">Authors</a>
+            <a class="text-sm font-medium text-white/80 hover:text-white transition-colors py-2 md:py-0" href="#categories">Categories</a>
+            <a class="text-sm font-medium text-white/80 hover:text-white transition-colors py-2 md:py-0" href="#about">About</a>
+            <button id="close-menu" class="text-white text-sm font-medium md:hidden py-2 text-left">Close</button>
         </div>
         <div class="hidden md:block">
             <a class="bg-dark-peach text-white text-sm px-4 py-2 rounded-lg hover:bg-dark-peach/90 transition-colors" href="#submit-story">Submit Story</a>
@@ -20,39 +20,4 @@
             </svg>
         </button>
     </div>
-    <style>
-        /* Mobile menu styles */
-        #mobile-menu.active {
-            display: flex;
-        }
-        @media (max-width: 767px) {
-            #mobile-menu {
-                flex-direction: column;
-                align-items: flex-start;
-                width: 100%;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            }
-            #mobile-menu a {
-                padding: 10px 0;
-                width: 100%;
-                text-align: left;
-            }
-            #close-menu {
-                padding: 10px;
-                background: transparent;
-                border: none;
-                cursor: pointer;
-            }
-        }
-    </style>
-    <script>
-        // Toggle mobile menu
-        document.getElementById('hamburger').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('active');
-        });
-        // Close mobile menu
-        document.getElementById('close-menu').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.remove('active');
-        });
-    </script>
 </nav>
