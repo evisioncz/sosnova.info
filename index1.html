@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,8 +26,23 @@
         }
         @media (max-width: 767px) {
             #mobile-menu {
+                position: absolute;
+                top: 3.5rem; /* Matches header height (py-4 ~ 2rem + buffer) */
+                left: 0;
+                right: 0;
                 width: 100%;
+                background: rgba(0, 0, 0, 0.95); /* Matches bg-primary/95 */
+                padding: 1rem;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-height: calc(100vh - 3.5rem);
+                overflow-y: auto;
+                z-index: 40;
+            }
+        }
+        @media (min-width: 768px) {
+            #mobile-menu {
+                flex-grow: 1;
+                justify-content: center;
             }
         }
     </style>
@@ -54,7 +70,7 @@
                             </div>
                             <h3 class="text-xl font-medium mb-3 text-primary">Material World</h3>
                             <p class="text-gray-600 text-sm mb-5 line-clamp-3">Research shows that some time outdoors can improve your health and wellbeing. Connecting with natural materials helps reduce stress levels.</p>
-                            <div class="flex items-center justify-between mt-auto pt-4 borderinski-t border-gray-100">
+                            <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                                 <div class="flex items-center gap-2">
                                     <div class="w-8 h-8 rounded-full overflow-hidden">
                                         <img alt="Benito Noboa" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="object-cover w-full h-full" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
@@ -343,5 +359,5 @@
             })
             .catch(error => console.error('Error loading header:', error));
     </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'95efab7c5c56b37a',t:'MTc1MjQ4MTk1MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
