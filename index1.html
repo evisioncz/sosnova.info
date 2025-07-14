@@ -4,270 +4,260 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" data-precedence="style1.css">
+    <link rel="stylesheet" href="style.css" data-precedence="style.css">
     <meta name="next-size-adjust" content="">
     <title>NAT - Nature Adventure Template</title>
     <meta name="description" content="Find your next outdoor adventure with NAT">
+    <style>
+        /* Nahrazení původních fontů standardními */
+        body.font-sans {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .poppins_82e0eeea-module__UxkG7q__variable {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .playfair_display_15d0e3d1-module__4K2SrG__variable {
+            font-family: Georgia, Times New Roman, serif;
+        }
+    </style>
 </head>
 <body class="font-sans antialiased">
-    <div class="fixed-overlay"></div>
-    <nav class="fixed top-0 left-0 right-0 z-50 py-4 bg-primary/95 backdrop-blur-sm shadow-md">
-        <div class="container nav-container">
-            <a class="nav-logo" href="https://3000-hnsblfkwdzatqavcjvjnnyozqfslsdnf.preview.same-app.com/">NAT</a>
-            <div class="nav-links">
-                <a class="nav-link" href="https://3000-hnsblfkwdzatqavcjvjnnyozqfslsdnf.preview.same-app.com/">Home</a>
-                <a class="nav-link" href="#stories">Stories</a>
-                <a class="nav-link" href="#authors">Authors</a>
-                <a class="nav-link" href="#categories">Categories</a>
-                <a class="nav-link" href="#about">About</a>
-            </div>
-            <div class="nav-button-container">
-                <a class="nav-submit-button" href="#submit-story">Submit Story</a>
-            </div>
-            <button class="nav-menu-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
-                    <line x1="4" x2="20" y1="12" y2="12"></line>
-                    <line x1="4" x2="20" y1="6" y2="6"></line>
-                    <line x1="4" x2="20" y1="18" y2="18"></line>
-                </svg>
-            </button>
-        </div>
-    </nav>
+    <div style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; pointer-events: none; z-index: 2147483646;"></div>
+    <div id="header"></div>
     <main class="pt-16">
-        <section class="section-peach">
+        <section class="py-20 bg-peach">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">STORIES</span>
-                    <h1 class="heading-1 text-primary">People Stories</h1>
-                    <p class="section-description">Every adventure creates a story. These are the tales of people who found meaning, healing, and transformation through their connection with nature. Read their experiences and be inspired to create your own story.</p>
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="inline-block mb-4 px-3 py-1 bg-primary/10 text-primary text-xs uppercase tracking-wider rounded-full">STORIES</span>
+                    <h1 class="heading-1 text-primary mb-6">People Stories</h1>
+                    <p class="text-gray-600 text-lg">Every adventure creates a story. These are the tales of people who found meaning, healing, and transformation through their connection with nature. Read their experiences and be inspired to create your own story.</p>
                 </div>
-                <div class="story-grid">
-                    <div class="story-card">
-                        <div class="story-image-container">
-                            <img alt="Material World" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="story-image" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-nature overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="h-56 overflow-hidden">
+                            <img alt="Material World" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
                         </div>
-                        <div class="story-content">
-                            <div class="story-tags">
-                                <span class="story-tag">Nature</span>
-                                <span class="story-tag">Materials</span>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Nature</span>
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Materials</span>
                             </div>
-                            <h3 class="story-title">Material World</h3>
-                            <p class="story-excerpt">Research shows that some time outdoors can improve your health and wellbeing. Connecting with natural materials helps reduce stress levels.</p>
-                            <div class="story-footer">
-                                <div class="story-author">
-                                    <div class="author-avatar">
-                                        <img alt="Benito Noboa" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
+                            <h3 class="text-xl font-medium mb-3 text-primary">Material World</h3>
+                            <p class="text-gray-600 text-sm mb-5 line-clamp-3">Research shows that some time outdoors can improve your health and wellbeing. Connecting with natural materials helps reduce stress levels.</p>
+                            <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full overflow-hidden">
+                                        <img alt="Benito Noboa" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="object-cover w-full h-full" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
                                     </div>
-                                    <div class="author-name">Benito Noboa</div>
+                                    <div class="text-sm text-gray-800">Benito Noboa</div>
                                 </div>
-                                <div class="story-date">8 Nov, 2020</div>
+                                <div class="text-xs text-gray-500">8 Nov, 2020</div>
                             </div>
                         </div>
-                        <div class="story-button-container">
-                            <button class="story-button">Read Story</button>
+                        <div class="px-6 pb-6">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 px-4 py-2 w-full bg-primary hover:bg-primary/90 text-white">Read Story</button>
                         </div>
                     </div>
-                    <div class="story-card">
-                        <div class="story-image-container">
-                            <img alt="Animal Behaves" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="story-image" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
+                    <div class="bg-white rounded-nature overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="h-56 overflow-hidden">
+                            <img alt="Animal Behaves" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
                         </div>
-                        <div class="story-content">
-                            <div class="story-tags">
-                                <span class="story-tag">Animals</span>
-                                <span class="story-tag">Wildlife</span>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap- Salis><span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Animals</span>
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Wildlife</span>
                             </div>
-                            <h3 class="story-title">Animal Behaves</h3>
-                            <p class="story-excerpt">Observing animals in their natural habitat can teach us about resilience and adaptation. Learn from the wisdom of wildlife.</p>
-                            <div class="story-footer">
-                                <div class="story-author">
-                                    <div class="author-avatar">
-                                        <img alt="Debashis Bhuiyan" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
+                            <h3 class="text-xl font-medium mb-3 text-primary">Animal Behaves</h3>
+                            <p class="text-gray-600 text-sm mb-5 line-clamp-3">Observing animals in their natural habitat can teach us about resilience and adaptation. Learn from the wisdom of wildlife.</p>
+                            <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full overflow-hidden">
+                                        <img alt="Debashis Bhuiyan" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="object-cover w-full h-full" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
                                     </div>
-                                    <div class="author-name">Debashis Bhuiyan</div>
+                                    <div class="text-sm text-gray-800">Debashis Bhuiyan</div>
                                 </div>
-                                <div class="story-date">8 Nov, 2020</div>
+                                <div class="text-xs text-gray-500">8 Nov, 2020</div>
                             </div>
                         </div>
-                        <div class="story-button-container">
-                            <button class="story-button">Read Story</button>
+                        <div class="px-6 pb-6">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 px-4 py-2 w-full bg-primary hover:bg-primary/90 text-white">Read Story</button>
                         </div>
                     </div>
-                    <div class="story-card">
-                        <div class="story-image-container">
-                            <img alt="Benefit From Nature" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="story-image" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
+                    <div class="bg-white rounded-nature overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="h-56 overflow-hidden">
+                            <img alt="Benefit From Nature" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
                         </div>
-                        <div class="story-content">
-                            <div class="story-tags">
-                                <span class="story-tag">Health</span>
-                                <span class="story-tag">Wellness</span>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Health</span>
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Wellness</span>
                             </div>
-                            <h3 class="story-title">Benefit From Nature</h3>
-                            <p class="story-excerpt">The healing power of nature is well-documented. From forest bathing to oceanside meditation, discover how nature nurtures.</p>
-                            <div class="story-footer">
-                                <div class="story-author">
-                                    <div class="author-avatar">
-                                        <img alt="Ftima Cambeiro" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
+                            <h3 class="text-xl font-medium mb-3 text-primary">Benefit From Nature</h3>
+                            <p class="text-gray-600 text-sm mb-5 line-clamp-3">The healing power of nature is well-documented. From forest bathing to oceanside meditation, discover how nature nurtures.</p>
+                            <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full overflow-hidden">
+                                        <img alt="Ftima Cambeiro" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="object-cover w-full h-full" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka3_byr7tr.jpg" crossorigin="anonymous">
                                     </div>
-                                    <div class="author-name">Ftima Cambeiro</div>
+                                    <div class="text-sm text-gray-800">Ftima Cambeiro</div>
                                 </div>
-                                <div class="story-date">8 Nov, 2020</div>
+                                <div class="text-xs text-gray-500">8 Nov, 2020</div>
                             </div>
                         </div>
-                        <div class="story-button-container">
-                            <button class="story-button">Read Story</button>
+                        <div class="px-6 pb-6">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 px-4 py-2 w-full bg-primary hover:bg-primary/90 text-white">Read Story</button>
                         </div>
                     </div>
-                    <div class="story-card">
-                        <div class="story-image-container">
-                            <img alt="Air, Food, Water" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="story-image" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/makule_b7zqyk.jpg" crossorigin="anonymous">
+                    <div class="bg-white rounded-nature overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="h-56 overflow-hidden">
+                            <img alt="Air, Food, Water" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/makule_b7zqyk.jpg" crossorigin="anonymous">
                         </div>
-                        <div class="story-content">
-                            <div class="story-tags">
-                                <span class="story-tag">Essentials</span>
-                                <span class="story-tag">Sustainability</span>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Essentials</span>
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Sustainability</span>
                             </div>
-                            <h3 class="story-title">Air, Food, Water</h3>
-                            <p class="story-excerpt">The essential elements of life come from our natural world. Explore how clean air, organic food, and pure water sustain us.</p>
-                            <div class="story-footer">
-                                <div class="story-author">
-                                    <div class="author-avatar">
-                                        <img alt="Nria Moura" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/makule_b7zqyk.jpg" crossorigin="anonymous">
+                            <h3 class="text-xl font-medium mb-3 text-primary">Air, Food, Water</h3>
+                            <p class="text-gray-600 text-sm mb-5 line-clamp-3">The essential elements of life come from our natural world. Explore how clean air, organic food, and pure water sustain us.</p>
+                            <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full overflow-hidden">
+                                        <img alt="Nria Moura" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="object-cover w-full h-full" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/makule_b7zqyk.jpg" crossorigin="anonymous">
                                     </div>
-                                    <div class="author-name">Nria Moura</div>
+                                    <div class="text-sm text-gray-800">Nria Moura</div>
                                 </div>
-                                <div class="story-date">8 Nov, 2020</div>
+                                <div class="text-xs text-gray-500">8 Nov, 2020</div>
                             </div>
                         </div>
-                        <div class="story-button-container">
-                            <button class="story-button">Read Story</button>
+                        <div class="px-6 pb-6">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 px-4 py-2 w-full bg-primary hover:bg-primary/90 text-white">Read Story</button>
                         </div>
                     </div>
-                    <div class="story-card">
-                        <div class="story-image-container">
-                            <img alt="Protection & Shelter" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="story-image" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/makule2_z6lc6k.jpg" crossorigin="anonymous">
+                    <div class="bg-white rounded-nature overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="h-56 overflow-hidden">
+                            <img alt="Protection & Shelter" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/makule2_z6lc6k.jpg" crossorigin="anonymous">
                         </div>
-                        <div class="story-content">
-                            <div class="story-tags">
-                                <span class="story-tag">Shelter</span>
-                                <span class="story-tag">Architecture</span>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Shelter</span>
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Architecture</span>
                             </div>
-                            <h3 class="story-title">Protection & Shelter</h3>
-                            <p class="story-excerpt">Throughout human history, we've used natural materials for protection. Learn about traditional shelters and modern eco-homes.</p>
-                            <div class="story-footer">
-                                <div class="story-author">
-                                    <div class="author-avatar">
-                                        <img alt="Alma Malmberg" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/makule2_z6lc6k.jpg" crossorigin="anonymous">
+                            <h3 class="text-xl font-medium mb-3 text-primary">Protection & Shelter</h3>
+                            <p class="text-gray-600 text-sm mb-5 line-clamp-3">Throughout human history, we've used natural materials for protection. Learn about traditional shelters and modern eco-homes.</p>
+                            <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full overflow-hidden">
+                                        <img alt="Alma Malmberg" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="object-cover w-full h-full" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/makule2_z6lc6k.jpg" crossorigin="anonymous">
                                     </div>
-                                    <div class="author-name">Alma Malmberg</div>
+                                    <div class="text-sm text-gray-800">Alma Malmberg</div>
                                 </div>
-                                <div class="story-date">8 Nov, 2020</div>
+                                <div class="text-xs text-gray-500">8 Nov, 2020</div>
                             </div>
                         </div>
-                        <div class="story-button-container">
-                            <button class="story-button">Read Story</button>
+                        <div class="px-6 pb-6">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 px-4 py-2 w-full bg-primary hover:bg-primary/90 text-white">Read Story</button>
                         </div>
                     </div>
-                    <div class="story-card">
-                        <div class="story-image-container">
-                            <img alt="Health & Well-being" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="story-image" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka2_evybke.jpg" crossorigin="anonymous">
+                    <div class="bg-white rounded-nature overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="h-56 overflow-hidden">
+                            <img alt="Health & Well-being" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka2_evybke.jpg" crossorigin="anonymous">
                         </div>
-                        <div class="story-content">
-                            <div class="story-tags">
-                                <span class="story-tag">Health</span>
-                                <span class="story-tag">Mental Health</span>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Health</span>
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Mental Health</span>
                             </div>
-                            <h3 class="story-title">Health & Well-being</h3>
-                            <p class="story-excerpt">Nature is our greatest doctor. Discover how being outdoors can boost your immune system and improve mental health.</p>
-                            <div class="story-footer">
-                                <div class="story-author">
-                                    <div class="author-avatar">
-                                        <img alt="Lubosek Hnilo" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka2_evybke.jpg" crossorigin="anonymous">
+                            <h3 class="text-xl font-medium mb-3 text-primary">Health & Well-being</h3>
+                            <p class="text-gray-600 text-sm mb-5 line-clamp-3">Nature is our greatest doctor. Discover how being outdoors can boost your immune system and improve mental health.</p>
+                            <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full overflow-hidden">
+                                        <img alt="Lubosek Hnilo" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="object-cover w-full h-full" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka2_evybke.jpg" crossorigin="anonymous">
                                     </div>
-                                    <div class="author-name">Lubosek Hnilo</div>
+                                    <div class="text-sm text-gray-800">Lubosek Hnilo</div>
                                 </div>
-                                <div class="story-date">8 Nov, 2020</div>
+                                <div class="text-xs text-gray-500">8 Nov, 2020</div>
                             </div>
                         </div>
-                        <div class="story-button-container">
-                            <button class="story-button">Read Story</button>
+                        <div class="px-6 pb-6">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 px-4 py-2 w-full bg-primary hover:bg-primary/90 text-white">Read Story</button>
                         </div>
                     </div>
-                    <div class="story-card">
-                        <div class="story-image-container">
-                            <img alt="Wide Sense" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="story-image" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka4_baw46e.jpg" crossorigin="anonymous">
+                    <div class="bg-white rounded-nature overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="h-56 overflow-hidden">
+                            <img alt="Wide Sense" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka4_baw46e.jpg" crossorigin="anonymous">
                         </div>
-                        <div class="story-content">
-                            <div class="story-tags">
-                                <span class="story-tag">Mindfulness</span>
-                                <span class="story-tag">Senses</span>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Mindfulness</span>
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Senses</span>
                             </div>
-                            <h3 class="story-title">Wide Sense</h3>
-                            <p class="story-excerpt">Using all your senses in nature heightens your connection to the world. Experience the wonder of fully mindful nature immersion.</p>
-                            <div class="story-footer">
-                                <div class="story-author">
-                                    <div class="author-avatar">
-                                        <img alt="Wen Yahui" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka4_baw46e.jpg" crossorigin="anonymous">
+                            <h3 class="text-xl font-medium mb-3 text-primary">Wide Sense</h3>
+                            <p class="text-gray-600 text-sm mb-5 line-clamp-3">Using all your senses in nature heightens your connection to the world. Experience the wonder of fully mindful nature immersion.</p>
+                            <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full overflow-hidden">
+                                        <img alt="Wen Yahui" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="object-cover w-full h-full" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka4_baw46e.jpg" crossorigin="anonymous">
                                     </div>
-                                    <div class="author-name">Wen Yahui</div>
+                                    <div class="text-sm text-gray-800">Wen Yahui</div>
                                 </div>
-                                <div class="story-date">8 Nov, 2020</div>
+                                <div class="text-xs text-gray-500">8 Nov, 2020</div>
                             </div>
                         </div>
-                        <div class="story-button-container">
-                            <button class="story-button">Read Story</button>
+                        <div class="px-6 pb-6">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 px-4 py-2 w-full bg-primary hover:bg-primary/90 text-white">Read Story</button>
                         </div>
                     </div>
-                    <div class="story-card">
-                        <div class="story-image-container">
-                            <img alt="Environments" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="story-image" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka4_baw46e.jpg" crossorigin="anonymous">
+                    <div class="bg-white rounded-nature overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="h-56 overflow-hidden">
+                            <img alt="Environments" loading="lazy" width="500" height="400" decoding="async" data-nimg="1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka4_baw46e.jpg" crossorigin="anonymous">
                         </div>
-                        <div class="story-content">
-                            <div class="story-tags">
-                                <span class="story-tag">Ecosystems</span>
-                                <span class="story-tag">Travel</span>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Ecosystems</span>
+                                <span class="text-xs px-2 py-1 bg-light-green/20 text-primary rounded-full">Travel</span>
                             </div>
-                            <h3 class="story-title">Environments</h3>
-                            <p class="story-excerpt">From deserts to forests, mountains to oceans, each environment offers unique experiences and lessons for human visitors.</p>
-                            <div class="story-footer">
-                                <div class="story-author">
-                                    <div class="author-avatar">
-                                        <img alt="Su Xinyi" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka4_baw46e.jpg" crossorigin="anonymous">
+                            <h3 class="text-xl font-medium mb-3 text-primary">Environments</h3>
+                            <p class="text-gray-600 text-sm mb-5 line-clamp-3">From deserts to forests, mountains to oceans, each environment offers unique experiences and lessons for human visitors.</p>
+                            <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full overflow-hidden">
+                                        <img alt="Su Xinyi" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="object-cover w-full h-full" style="color:transparent" src="https://res.cloudinary.com/drgw8apbq/image/upload/w_600/zahradka4_baw46e.jpg" crossorigin="anonymous">
                                     </div>
-                                    <div class="author-name">Su Xinyi</div>
+                                    <div class="text-sm text-gray-800">Su Xinyi</div>
                                 </div>
-                                <div class="story-date">8 Nov, 2020</div>
+                                <div class="text-xs text-gray-500">8 Nov, 2020</div>
                             </div>
                         </div>
-                        <div class="story-button-container">
-                            <button class="story-button">Read Story</button>
+                        <div class="px-6 pb-6">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 px-4 py-2 w-full bg-primary hover:bg-primary/90 text-white">Read Story</button>
                         </div>
                     </div>
                 </div>
-                <div class="submit-story-section">
-                    <p class="submit-story-text">Want to share your own nature story with our community?</p>
-                    <button class="submit-story-button">Submit Your Story</button>
+                <div class="mt-16 text-center">
+                    <p class="mb-8 text-gray-600">Want to share your own nature story with our community?</p>
+                    <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 bg-dark-peach hover:bg-dark-peach/90 border-none text-white rounded-full px-8 py-6 text-lg">Submit Your Story</button>
                 </div>
             </div>
         </section>
     </main>
     <footer class="bg-primary text-white pt-16 pb-8">
         <div class="container">
-            <div class="footer-grid">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div>
-                    <a class="footer-logo" href="https://3000-hnsblfkwdzatqavcjvjnnyozqfslsdnf.preview.same-app.com/">NAT</a>
-                    <p class="footer-description">Connecting people through their stories with nature. Share your experiences and inspire others to discover the natural world.</p>
-                    <div class="footer-social">
-                        <a class="social-icon" aria-label="Facebook" href="https://www.facebook.com/">
+                    <a class="text-xl font-semibold" href="/">NAT</a>
+                    <p class="mt-4 text-white/70">Connecting people through their stories with nature. Share your experiences and inspire others to discover the natural world.</p>
+                    <div class="mt-6 flex space-x-3">
+                        <a class="bg-dark-peach/20 rounded-full p-2 hover:bg-dark-peach/40 transition-colors" aria-label="Facebook" href="https://www.facebook.com/">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg>
                         </a>
-                        <a class="social-icon" aria-label="Twitter" href="https://twitter.com/login">
+                        <a class="bg-dark-peach/20 rounded-full p-2 hover:bg-dark-peach/40 transition-colors" aria-label="Twitter" href="https://twitter.com/login">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter">
                                 <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
                             </svg>
                         </a>
-                        <a class="social-icon" aria-label="Instagram" href="https://www.instagram.com/accounts/login/?hl=en">
+                        <a class="bg-dark-peach/20 rounded-full p-2 hover:bg-dark-peach/40 transition-colors" aria-label="Instagram" href="https://www.instagram.com/accounts/login/?hl=en">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
                                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -277,41 +267,50 @@
                     </div>
                 </div>
                 <div>
-                    <h4 class="footer-section-title">STORY CATEGORIES</h4>
-                    <ul class="footer-links">
-                        <li><a class="footer-link" href="#category-adventure">Adventure</a></li>
-                        <li><a class="footer-link" href="#category-wellness">Wellness</a></li>
-                        <li><a class="footer-link" href="#category-conservation">Conservation</a></li>
-                        <li><a class="footer-link" href="#category-photography">Nature Photography</a></li>
+                    <h4 class="text-white/80 font-medium mb-4">STORY CATEGORIES</h4>
+                    <ul class="space-y-2">
+                        <li><a class="text-white/60 hover:text-white transition-colors" href="#category-adventure">Adventure</a></li>
+                        <li><a class="text-white/60 hover:text-white transition-colors" href="#category-wellness">Wellness</a></li>
+                        <li><a class="text-white/60 hover:text-white transition-colors" href="#category-conservation">Conservation</a></li>
+                        <li><a class="text-white/60 hover:text-white transition-colors" href="#category-photography">Nature Photography</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-section-title">POPULAR TAGS</h4>
-                    <div class="footer-tags">
-                        <a class="footer-tag" href="#tag-hiking">Hiking</a>
-                        <a class="footer-tag" href="#tag-mountains">Mountains</a>
-                        <a class="footer-tag" href="#tag-wildlife">Wildlife</a>
-                        <a class="footer-tag" href="#tag-camping">Camping</a>
-                        <a class="footer-tag" href="#tag-forest">Forest</a>
+                    <h4 class="text-white/80 font-medium mb-4">POPULAR TAGS</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <a class="bg-dark-peach/20 text-white/90 text-xs px-3 py-1 rounded-full hover:bg-dark-peach/40 transition-colors" href="#tag-hiking">Hiking</a>
+                        <a class="bg-dark-peach/20 text-white/90 text-xs px-3 py-1 rounded-full hover:bg-dark-peach/40 transition-colors" href="#tag-mountains">Mountains</a>
+                        <a class="bg-dark-peach/20 text-white/90 text-xs px-3 py-1 rounded-full hover:bg-dark-peach/40 transition-colors" href="#tag-wildlife">Wildlife</a>
+                        <a class="bg-dark-peach/20 text-white/90 text-xs px-3 py-1 rounded-full hover:bg-dark-peach/40 transition-colors" href="#tag-camping">Camping</a>
+                        <a class="bg-dark-peach/20 text-white/90 text-xs px-3 py-1 rounded-full hover:bg-dark-peach/40 transition-colors" href="#tag-forest">Forest</a>
                     </div>
-                    <div class="footer-subscribe">
-                        <h4 class="footer-section-title">SUBSCRIBE</h4>
-                        <p class="footer-subscribe-text">Get weekly stories delivered to your inbox</p>
-                        <div class="subscribe-form">
-                            <input type="email" placeholder="Your email" class="subscribe-input">
-                            <button class="subscribe-button">Join</button>
+                    <div class="mt-8">
+                        <h4 class="text-white/80 font-medium mb-4">SUBSCRIBE</h4>
+                        <p class="text-white/60 text-sm mb-3">Get weekly stories delivered to your inbox</p>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="bg-white/10 text-white px-4 py-2 rounded-l-lg w-full focus:outline-none focus:bg-white/20">
+                            <button class="bg-dark-peach text-white px-4 py-2 rounded-r-lg hover:bg-dark-peach/90 transition-colors">Join</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="footer-copyright">20XX <a href="https://sosnova.info">Michal</a>. All rights reserved</div>
-                <div class="footer-bottom-links">
-                    <a class="footer-bottom-link" href="https://3000-hnsblfkwdzatqavcjvjnnyozqfslsdnf.preview.same-app.com/termsofuse">Terms of Use</a>
-                    <a class="footer-bottom-link" href="https://3000-hnsblfkwdzatqavcjvjnnyozqfslsdnf.preview.same-app.com/privacypolicy">Privacy Policy</a>
+            <div class="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-white/60 text-sm">20XX <a class="hover:text-white" href="https://sosnova.info">Michal</a>. All rights reserved</div>
+                <div class="mt-4 md:mt-0 flex space-x-6">
+                    <a class="text-white/60 text-sm hover:text-white transition-colors" href="/termsofuse">Terms of Use</a>
+                    <a class="text-white/60 text-sm hover:text-white transition-colors" href="/privacypolicy">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        // Fetch and insert header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
 </body>
 </html>
